@@ -1,0 +1,16 @@
+pandas
+datasets
+transformers
+torch
+dataclasses
+typing
+evaluate
+tokenizers
+gradio
+ffmpeg
+librosa
+soundfile
+jiwer
+soundfile
+accelerate
+tensorboard
