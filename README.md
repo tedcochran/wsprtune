@@ -12,11 +12,10 @@ Transcribe the audio data into text. You can use the pre-trained Whisper large m
 3. Data Preprocessing:
 Clean and preprocess both the audio and text data. Remove any irrelevant information and ensure text and audio file pairs are correctly matched. The train.tsv and test.tsv files are expecting two tab-separated columns: path and script.  The path specifies the location of the audio file, e.g. audio/myaudiofile1.mp3.  The script is the text transcription of the audio file.
 4. Fine-Tuning:
-Use the provided Python notebook (tune.ipynb) to fine-tune the pre-trained Whisper small speech-to-text model. Customize the notebook to use the larger or smaller versions of the model depending on the compute resources you have available.
+Use the provided Python notebook (wsprtune.ipynb) to fine-tune the pre-trained Whisper small speech-to-text model. Customize the notebook to use the larger or smaller versions of the model depending on the compute resources you have available.
 
 ### Deploy and Inference
-1. Customize the final cell in the tune.ipynb notebook to launch a Gradio graphical interface for using the fine-tuned model in a processing pipeline.
-2. You can optionally customize the notune.ipynb notebook to launch a second Gradio interface to use the same pre-trained model before fine-tuning, for a quick basis of comparison.
+Customize the final cell in the wsprtune.ipynb notebook to launch a Gradio graphical interface for using the fine-tuned model in a processing pipeline.
 
 ### Conclusion
 By following the steps outlined in this README and using the provided Python notebook, you can adapt a pre-trained speech-to-text model to specialize in transcribing audio data within a specific domain, incorporating the unique jargon and lexicon of that domain.
